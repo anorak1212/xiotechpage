@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <title>Guía de Uso</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="top">
+  <!-- Fondo y barra de navegación -->
+  <div class="bgded overlay" style="background-image:url('../images/demo/backgrounds/guiauso.jpg');">
+    <div class="wrapper row0">
+      <div id="topbar" class="hoc clear">
+        <div class="fl_left">
+          <ul class="nospace">
+            <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="fl_right">
+          <ul class="nospace">
+            <li><i class="fa fa-phone"></i> +52 7223536423</li>
+            <li><i class="fa fa-envelope-o"></i> mateojime.per@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Encabezado y logo -->
+    <div class="wrapper row1">
+      <header id="header" class="hoc clear">
+        <div id="logo" class="fl_left">
+          <a href="../index.html"><img src="../images/demo/logo.png" width="300" height="50" alt="Inicio"></a>
+        </div>
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li><a href="../index.html">Inicio</a></li>
+            <!-- PAGINAS PESTAÑAS -->
+            <li><a class="drop" href="#">Páginas</a>
+              <ul>
+                <li><a href="../pages/teoria.html">Teoría</a></li>
+                <li><a href="../pages/ejemplospracticos.html">Ejemplos Prácticos</a></li>
+                <li><a href="pages/gallery.html">Galería</a></li>
+                <li><a href="pages/basic-grid.html">Recursos</a></li>
+                <li><a href="pages/basic-grid.html">Preguntas Frecuentes</a></li>
+              </ul>
+            </li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="practica.html">Práctica</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="wrapper">
+      <section id="breadcrumb" class="hoc clear">
+        <!-- Navegacion -->
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="guideuso.html">Guía de Uso</a></li>
+        </ul>
+        <!-- Final Navegacion -->
+        <h6 class="heading" style="font-family: 'Kanit', sans-serif;">Guía de Uso</h6>
+      </section>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      <div class="content">
+        <!-- Principal Section Title -->
+        <h1 style="font-family: 'Kanit', sans-serif;">Guía de Uso de Osciloscopio y Generador de Funciones</h1>
+        <p style="text-align: justify;">
+          Esta guía está diseñada para proporcionar una comprensión profunda de cómo utilizar un osciloscopio y un
+          generador de funciones, herramientas esenciales en la práctica de la electrónica.<br><br>
+          Estos dispositivos no solo son fundamentales para ingenieros y técnicos, sino que también son recursos
+          valiosos para estudiantes que desean aprender sobre el comportamiento de circuitos eléctricos y
+          señales.<br><br>
+        </p>
+        <div class="img-container btmspace-15">
+          <ul>
+            <li type="circle">El osciloscopio permite a los ingenieros visualizar y analizar señales eléctricas en el
+              dominio del tiempo, lo que resulta crucial para el diagnóstico y solución de problemas en circuitos
+              electrónicos.</li>
+            <li type="circle">Por otro lado, los generadores de funciones son vitales para crear señales de prueba que
+              simulan
+              diferentes condiciones de funcionamiento, facilitando la evaluación del rendimiento de los circuitos.</li>
+            <li type="circle">Al combinar ambas herramientas, los usuarios pueden realizar pruebas más exhaustivas y
+              precisas, lo que
+              mejora la calidad y fiabilidad de sus proyectos.</li>
+            <li type="circle">Esta guía no solo te enseñará a manejar estos instrumentos de manera efectiva, sino que
+              también
+              exploraremos configuraciones recomendadas, consejos prácticos y ejemplos de aplicación que enriquecerán tu
+              experiencia.</li>
+            <li type="circle">Además, abordaremos conceptos fundamentales y mejores prácticas que te ayudarán a
+              optimizar tu trabajo
+              en proyectos electrónicos, asegurando que saques el máximo provecho de estas herramientas vitales en tu
+              aprendizaje y práctica.</li>
+          </ul>
+          <!-- Introductory Image -->
+          <img src="../images/demo/gallery/osciyfunci.jpg" alt="Osciloscopio y Generador de Funciones"
+            class="image-right" style="margin-left: 10px;" width=400>
+        </div>
+
+        <!-- Oscilloscope Usage Section -->
+        <h2>Uso del Osciloscopio</h2>
+        <p>Vamos a realizar una medición con un osciloscopio digital para que puedas entender los conceptos teóricos
+          explicados a lo largo del artículo. Lo expresado aquí corresponde al osciloscopio donde realicé las pruebas;
+          en el tuyo, seguramente cambien los nombres, pero los procesos a realizar serán muy parecidos.</p>
+
+        <h4>1. Conocer nuestro osciloscopio</h4>
+        <p>Vamos a utilizar un osciloscopio con las siguientes características:</p>
+        <ol>
+          <li><strong>Tipo de osciloscopio:</strong> DSO</li>
+          <li><strong>Ancho de banda:</strong> 100 MHz</li>
+          <li><strong>Tasa de muestreo:</strong> 1 GS/s</li>
+          <li><strong>Pantalla:</strong> LCD a color 5,7 pulgadas</li>
+          <li><strong>Canales:</strong> 2</li>
+          <li><strong>Funciones:</strong> matemáticas, medidas automáticas, diferentes formas de disparo, entre otras.
+          </li>
+          <li><strong>Comunicación:</strong> USB</li>
+          <li><strong>Sondas:</strong> 2 pasivas 1:1/10:1</li>
+        </ol>
+
+        <h3>2. Seguridad</h3>
+        <p>Debemos tener en cuenta un aspecto importante al usar un osciloscopio: la tierra (Ground) es el punto de
+          referencia cuando realizamos mediciones de tensión. Asegúrate de conectarla correctamente a la tierra del
+          circuito que se esté midiendo, asegurando resultados precisos y confiables, y evitando daños al osciloscopio o
+          en los componentes del circuito bajo prueba.</p>
+
+        <p>Como muestra la imagen a continuación, la tierra del osciloscopio está en contacto directo con los conectores
+          BNC de las sondas y con la clavija de alimentación del osciloscopio. También debe ir conectada a la tierra del
+          equipo a ser analizado. El uso de una sonda diferencial es ideal cuando necesitamos trabajar en zonas de
+          tierra caliente de fuentes de alimentación conmutadas.</p>
+        <figcaption style="text-align: center;">
+          <!-- Imagen del osciloscopio -->
+          <img src="../images/demo/gallery/seguridad.jpg" alt="Seguridad" width="300">
+        </figcaption>
+
+        <h10 class="heading font-x1" style="text-align: center;">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conector
+          Tierra
+        </h10>
+        <br>
+
+        <h3>3. Calibración automática del osciloscopio</h3>
+        <p>Para verificar el correcto funcionamiento del osciloscopio, utilizaremos la calibración automática (self
+          calibration) para volver a las condiciones de fábrica. Debes leer en el manual de tu equipo cómo realizar esta
+          calibración.</p>
+        <ol>
+          <li>Deja calentar el osciloscopio unos 20 a 30 minutos.</li>
+          <li>Desconecta cualquier sonda que tengas conectada.</li>
+          <li>Presiona el botón <strong>UTILITY</strong>, luego <strong>F1</strong> y selecciona <strong>AUTO
+              CAL</strong> y ejecuta.</li>
+          <li>Se mostrará una barra de progreso mientras se realiza la auto calibración. Dependiendo del osciloscopio,
+            el proceso puede demorar varios minutos; en mi caso, solo fueron tres minutos.</li>
+          <li>Algunos osciloscopios necesitan ser reiniciados (apagados y encendidos de nuevo). El proceso de
+            calibración automática se puede realizar esporádicamente, cada 8 o 15 días, o cuando las condiciones de
+            temperatura ambiente cambien considerablemente.</li>
+        </ol>
+
+
+
+        <h3>4. Configuración de las sondas</h3>
+        <p>Para ello utilizaremos una señal eléctrica de prueba que el instrumento trae y que nos sirve para verificar
+          el correcto funcionamiento y precisión de nuestro equipo. También nos permite realizar el ajuste de
+          compensación para nuestras sondas de prueba si es necesario. Para nuestro caso, utilizaremos una onda de 3
+          voltios con una frecuencia de 1000 Hz.</p>
+        <p>Para realizar la medida, debemos atenuar nuestra sonda pasiva a 10:1.</p>
+        <p>Luego, ajustamos la escala del osciloscopio también a 10:1. En mi caso, presiono <strong>CH1</strong> y luego
+          <strong>F4</strong>, allí está la opción para cambiar la atenuación, selecciono <strong>10X</strong>.
+        </p>
+        <p>Colocamos la sonda en la terminal de prueba para la compensación de la sonda y verificación de la onda
+          cuadrada de 3V y 1 KHz.</p>
+        <figcaption style="text-align: center;">
+          <!-- Imagen del osciloscopio -->
+          <img src="../images\demo\gallery\Configuración de las sondas.jpg" alt="Configuración" width="400">
+        </figcaption>
+        <h10 class="heading font-x1" style="text-align: center;">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Configuración
+        </h10>
+
+        <h3>5. Prueba de la compensación de la sonda</h3>
+        <p>Afortunadamente, el osciloscopio digital tiene un botón denominado <strong>AUTO</strong> que genera una
+          escala vertical y horizontal que nos proporciona una imagen de la señal a medir, requiriendo pocos ajustes y
+          además nos muestra en pantalla los ajustes generados.</p>
+        <p>Si la señal tiene deformaciones, ajustamos el condensador de compensación hasta obtener una señal adecuada.
+          Repetimos el proceso con la segunda sonda y el segundo canal de nuestro osciloscopio.</p>
+        <figcaption style="text-align: center;">
+          <!-- Imagen del osciloscopio -->
+          <img src="../images\demo\gallery\Prueba de la compensación de la sonda.jpg" alt="Configuración" width="400">
+        </figcaption>
+        <h10 class="heading font-x1" style="text-align: center;">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Escala
+          vertical y horizontal
+        </h10>
+
+        <h3>6. Prueba de una señal de calibración en un osciloscopio digital</h3>
+        <p>La imagen superior nos muestra la señal de calibración generada internamente por el osciloscopio. La escala
+          vertical del canal 1 está a 500mV por división y, como ocupa seis divisiones, tiene una amplitud de 3 Voltios.
+        </p>
+        <p>La base de tiempo horizontal está a 500µs y, como ocupa 2 divisiones, tiene un periodo de 1000µs o 1ms. Como
+          sabemos, la frecuencia es la inversa del periodo, por tanto, es de 1000Hz.</p>
+        <p>Verificamos el canal 2 para comprobar la calibración de las sondas y el funcionamiento correcto del
+          osciloscopio.</p>
+        <!-- FIN -->
+
+        <!-- Uso del Osciloscopio: Medición de un Circuito Real -->
+        <h2>Cómo medir un circuito real con un osciloscopio</h2>
+        <p>Para nuestro ejemplo, usaremos los siguientes materiales:</p>
+        <ul>
+          <li><strong>Osciloscopio digital</strong></li>
+          <li><strong>Tarjeta Arduino UNO</strong></li>
+          <li><strong>Protoboard</strong></li>
+          <li><strong>1 LED de cualquier color</strong></li>
+          <li><strong>1 resistencia de 470 Ω</strong></li>
+          <li><strong>Cables para realizar las conexiones</strong></li>
+        </ul>
+
+        <p>Vamos a visualizar con un osciloscopio digital la señal PWM de Arduino UNO. Usaremos para tal fin una de sus
+          salidas habilitadas con esa funcionalidad. Disponemos de los pines 3, 5, 6, 9, 10 y 11. En los pines 5 y 6 la
+          salida es de 980 Hz y en las demás 490 Hz.</p>
+
+        <h4>Pines PWM en un Arduino UNO</h4>
+        <p>Usaremos el pin 3 (490 Hz) para visualizar la señal con el osciloscopio.</p>
+        <figcaption style="text-align: center;">
+          <!-- Imagen de pines PWM en Arduino UNO -->
+          <img src="../images/demo/gallery/pines_pwm_arduino.jpg" alt="Pines PWM en Arduino UNO" width="400">
+        </figcaption>
+
+        <p>Desde GND y con ayuda de un cable conectamos en la protoboard una resistencia de 470 Ω en serie al cátodo de
+          LED y su ánodo con un cable al pin 3 de Arduino.</p>
+        <figcaption style="text-align: center;">
+          <!-- Diagrama pictórico del circuito de prueba de una salida PWM con Arduino UNO -->
+          <img src="../images/demo/gallery/circuito_pwm_arduino.jpg" alt="Diagrama del circuito de prueba" width="400">
+        </figcaption>
+
+        <h3>Código para generar la señal PWM</h3>
+        <pre>
+      <code class="code-block">
+        <span class="comment">// Programa para visualizar la forma de onda PWM con la ayuda de un osciloscopio</span>
+        <span class="keyword">int</span> LED = 3; <span class="comment">// Salida PWM a utilizar con el LED.</span>
+      
+        <span class="keyword">void</span> <span class="function">setup</span>()  {
+          pinMode(LED, OUTPUT); <span class="comment">// Declaramos el LED (pin 3) como salida.</span>
+        }
+      
+        <span class="keyword">void</span> <span class="function">loop</span>() {
+          analogWrite(LED, 128); <span class="comment">// Encendemos el LED</span>
+        }
+      </code>
+</pre>
+
+        <p>Poco que decir del sketch, utilizamos el pin 3 como salida PWM y con la función <code>analogWrite()</code>
+          encendemos el LED a la mitad del brillo máximo.</p>
+        <p>Repasemos un poco lo que hace la función <code>analogWrite()</code>.</p>
+
+        <p>Esta función le indica al Arduino UNO cuál es el ancho del pulso que queremos enviarle por un pin
+          determinado. Para esto contamos con 8 bits de resolución que nos ofrece un abanico de posibilidades de 0 a
+          255.</p>
+
+        <pre>
+<code>analogWrite(pin, valor)</code>
+</pre>
+
+        <p>Como parámetros tenemos a <code>pin</code>, que en nuestro caso será el pin 3 y <code>valor</code> donde
+          podemos colocar valores desde 0, donde lograremos un ciclo de trabajo de 0% y un LED apagado, hasta 255 para
+          un ciclo de trabajo del 100% y un brillo máximo en el LED. De esta forma podemos analizar con el osciloscopio
+          la forma de la onda en el pin 3 para los diferentes ciclos de trabajo que programemos en el sketch.</p>
+
+        <h3>Calculo de parámetros y variación del ciclo de trabajo</h3>
+        <p>Vamos a calcular algunos parámetros y a modificar el ciclo de trabajo (D).</p>
+
+        <p>Calculemos la frecuencia en el pin 3 de Arduino Uno. Colocamos la escala vertical del osciloscopio en 200mV y
+          la base de tiempo en 500µs. En el sketch, la función <code>analogWrite(3, 128)</code> y así obtenemos un ciclo
+          de trabajo del 50%.</p>
+        <figcaption style="text-align: center;">
+          <!-- Gráfico de ciclo de trabajo del 50% -->
+          <img src="../images/demo/gallery/ciclo_50.jpg" alt="Ciclo de trabajo del 50%" width="300">
+        </figcaption>
+
+        <p><strong>Ciclo de trabajo:</strong> 50%. La tensión en la carga aparece durante 1 ms.</p>
+
+        <p><strong>Amplitud:</strong></p>
+        <ul>
+          <li>200mV x 2.5 = 500mV.</li>
+          <li>Recordemos que la sonda está atenuada 10X, por tanto tensión es de 5V.</li>
+        </ul>
+
+        <p><strong>Periodo:</strong></p>
+        <ul>
+          <li>500µs x 4 = 2000µs o 2ms.</li>
+        </ul>
+
+        <p><strong>Frecuencia:</strong></p>
+        <ul>
+          <li>1 / T = 500Hz.</li>
+        </ul>
+
+        <p>Coloquemos el ciclo de trabajo en un 25%, por tanto, la función <code>analogWrite(3, 64)</code>. La
+          configuración del osciloscopio será la misma, ya que la frecuencia no varía; variamos el porcentaje del ciclo
+          de trabajo.</p>
+        <figcaption style="text-align: center;">
+          <!-- Gráfico de ciclo de trabajo del 25% -->
+          <img src="../images/demo/gallery/ciclo_25.jpg" alt="Ciclo de trabajo del 25%" width="300">
+        </figcaption>
+
+        <p><strong>Ciclo de trabajo:</strong> 25%. La tensión en la carga aparece durante 0.5 ms.</p>
+
+        <p>Vamos ahora con un ciclo de trabajo de 75%, la función <code>analogWrite(3,192)</code>.</p>
+        <figcaption style="text-align: center;">
+          <!-- Gráfico de ciclo de trabajo del 75% -->
+          <img src="../images/demo/gallery/ciclo_75.jpg" alt="Ciclo de trabajo del 75%" width="300">
+        </figcaption>
+
+        <p><strong>Ciclo de trabajo:</strong> 75%. La tensión en la carga aparece durante 1.5 ms.</p>
+
+        <p>Finalmente, creo que no te sorprenderás con la imagen inferior que representa un ciclo de trabajo de 0%
+          (<code>analogWrite(3, 0)</code>), LED apagado y un ciclo de trabajo de 100% (<code>analogWrite(3, 255)</code>)
+          LED a brillo máximo.</p>
+        <figcaption style="text-align: center;">
+          <!-- Gráfico de ciclo de trabajo del 0% y 100% -->
+          <img src="../images/demo/gallery/ciclo_0_100.jpg" alt="Ciclo de trabajo del 0% y 100%" width="500">
+        </figcaption>
+
+        <!-- FIN -->
+
+
+
+        <!-- Oscilloscope Tips -->
+        <!-- Oscilloscope Tips -->
+        <section>
+          <h2>Consejos para el Uso del Osciloscopio</h2>
+          <ul>
+            <li>
+              <strong>Mantén las conexiones seguras:</strong>
+              Asegúrate de que las conexiones de la sonda sean firmes y estén bien conectadas al circuito. Un mal
+              contacto puede provocar lecturas erráticas o inexactas. Verifica que los conectores BNC estén limpios y
+              sin corrosión. Si es posible, utiliza sondas de calidad y comprueba que el osciloscopio esté adecuadamente
+              conectado a tierra para evitar interferencias.
+            </li>
+            <li>
+              <strong>Utiliza las escalas adecuadas:</strong>
+              Siempre ajusta la escala vertical y horizontal del osciloscopio para que se adapten a la señal que estás
+              midiendo. Utilizar escalas demasiado grandes puede resultar en señales difíciles de interpretar, mientras
+              que escalas demasiado pequeñas pueden saturar la pantalla. La clave es elegir escalas que permitan
+              visualizar claramente las características de la señal, como la amplitud, el período y la frecuencia.
+            </li>
+            <li>
+              <strong>Calibra regularmente:</strong>
+              Realiza la calibración de tu osciloscopio al menos una vez cada seis meses, o más frecuentemente si
+              trabajas en un entorno crítico. La calibración asegura que los valores medidos sean precisos y confiables.
+              Consulta el manual de tu osciloscopio para seguir el procedimiento correcto de calibración, que
+              generalmente incluye la verificación de la respuesta en frecuencia y la calibración de las sondas.
+            </li>
+            <li>
+              <strong>Comprende la configuración de disparo:</strong>
+              Familiarízate con las funciones de disparo (trigger) del osciloscopio. Un buen disparo es crucial para
+              obtener una visualización estable de la señal. Aprende a ajustar el nivel y la pendiente del disparador
+              para capturar eventos transitorios y señales periódicas de manera efectiva. La configuración incorrecta
+              del disparador puede dar lugar a imágenes distorsionadas o no útiles.
+            </li>
+            <li>
+              <strong>Documenta tus mediciones:</strong>
+              Mantén un registro de tus mediciones y observaciones. Esto no solo te ayudará a seguir tu progreso, sino
+              que también te permitirá volver a revisar tus hallazgos y compartir tus resultados con otros. Utiliza
+              software de captura de pantalla o funciones de almacenamiento en el osciloscopio para guardar imágenes de
+              las formas de onda, si están disponibles.
+            </li>
+            <li>
+              <strong>Protege tu equipo:</strong>
+              Mantén tu osciloscopio alejado de ambientes húmedos o polvorientos y nunca lo expongas a temperaturas
+              extremas. Usa protectores de pantalla y fundas cuando el equipo no esté en uso. Además, revisa
+              regularmente el estado de las sondas y reemplaza las que estén dañadas o desgastadas, ya que esto puede
+              afectar la precisión de las mediciones.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Sección de Uso del Generador de Funciones -->
+        <h2>Uso del Generador de Funciones</h2>
+        <p>El generador de funciones permite crear diferentes formas de onda. A continuación se presentan las
+          instrucciones para su uso.</p>
+
+        <div class="img-container btmspace-15"></div>
+        <ul>
+          <li>
+            <h3>Paso 1: Encender el Generador de Funciones</h3>
+            <p>Presiona el botón de encendido para activar el dispositivo.</p>
+          </li>
+          <li>
+            <h3>Paso 2: Seleccionar la Forma de Onda</h3>
+            <p>Utiliza el selector para elegir la forma de onda deseada (senoidal, cuadrada, triangular).</p>
+          </li>
+          <li>
+            <h3>Paso 3: Ajustar la Frecuencia</h3>
+            <p>Configura la frecuencia de la señal de salida utilizando el dial de frecuencia.</p>
+          </li>
+          <li>
+            <h3>Paso 4: Ajustar la Amplitud</h3>
+            <p>Regula la amplitud de la señal según las necesidades de tu experimento.</p>
+          </li>
+          <li>
+            <h3>Paso 5: Conectar la Salida</h3>
+            <p>Conecta la salida del generador al circuito o dispositivo que desees probar.</p>
+          </li>
+        </ul>
+
+        <img src="../images\demo\gallery\function generator applications.jpg" alt="Generador de funciones"
+          class="image-right" style="margin-right: 10px;" width=275>
+      </div>
+
+
+
+      <!-- Function Generator Tips -->
+      <h2>Consejos para el Uso del Generador de Funciones</h2>
+      <ul>
+        <li><strong>Verifica las conexiones:</strong> Asegúrate de que todas las conexiones sean correctas antes de
+          iniciar el experimento.</li>
+        <li><strong>Experimenta con diferentes formas de onda:</strong> No dudes en probar distintas configuraciones
+          para entender mejor el comportamiento del circuito.</li>
+        <li><strong>Documenta tus experimentos:</strong> Mantén un registro de las configuraciones utilizadas para
+          futuras referencias.</li>
+      </ul>
+
+
+      <!-- Visualización de las formas de onda de un generador de funciones -->
+      <h2>Visualización de las formas de onda de un generador de funciones</h2>
+      <p>Vamos a verificar el funcionamiento de un generador de funciones Protek, modelo 9205A con ayuda de un
+        osciloscopio UNIT-T UTD2102CE.</p>
+
+      <!-- Sección: Generador de frecuencia y osciloscopio -->
+      <ul>
+        <li type="circle">
+          <h3>Generador de frecuencia y osciloscopio</h3>
+        </li>
+      </ul>
+      <p>Inicialmente debemos verificar el buen funcionamiento del osciloscopio y la calibración de la sonda del mismo.
+      </p>
+
+      <p>El osciloscopio genera una señal de calibración de 3 voltios a una frecuencia de 1 kHz (1000 Hz).</p>
+      <p>Ingresamos la señal de prueba por el canal uno (CH 1), con el osciloscopio y la sonda en atenuación X1.</p>
+      <p>Este es el mapa de bits generado en el osciloscopio con la señal de calibración:</p>
+      <!-- Imagen de la señal de calibración -->
+      <figcaption style="text-align: center;">
+        <img src="../images\demo\gallery\Generador de frecuencia y osciloscopio.jpg"
+          alt="Generador de frecuencia y osciloscopio">
+      </figcaption>
+
+      <p>La sensibilidad vertical está ajustada a 1.00 V/Div y como la señal se eleva en 3 divisiones, tenemos los 3
+        voltios.</p>
+      <p>La escala horizontal o de tiempo está en 500 µs/Div y ocupa 2 divisiones, o sea un periodo de 1000 µs (1 ms) y
+        como la frecuencia es el inverso del periodo, tenemos que:</p>
+      <p style="text-align: center;">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <mrow>
+            <mo>(</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mn>0.001</mn>
+            </mfrac>
+            <mo>)</mo>
+            <mo>=</mo>
+            <mtext> 1000 Hz</mtext>
+          </mrow>
+        </math>
+      </p>
+
+      <p>Vamos a conectar el generador de funciones al osciloscopio para verificar las formas de onda.</p>
+
+      <!-- Sección: Sonda del generador de señales -->
+      <ul>
+        <li type="circle">
+          <h3>Sonda del generador de señales</h3>
+        </li>
+      </ul>
+
+      <p>Aunque la conexión de las sondas del osciloscopio y del generador de funciones es del tipo BNC, las terminales
+        de sus puntas son diferentes, así que debemos utilizar los caimanes de la sonda del generador de funciones para
+        agarrar la punta de la sonda del osciloscopio y su caimán de tierra.</p>
+
+      <!-- Sección: Generación de onda senoidal -->
+      <ul>
+        <li type="circle">
+          <h3>Generación de onda senoidal</h3>
+        </li>
+      </ul>
+
+      <p>Vamos a seleccionar la forma de onda senoidal en el generador de funciones y la visualizamos en el osciloscopio
+        en modo automático (AUTO).</p>
+      <p>La sensibilidad vertical está ajustada a 1.00 V/Div y como la señal se eleva en 4 divisiones, tenemos 4 voltios
+        de pico a pico.</p>
+      <p>La escala horizontal o de tiempo está en 20 µs/Div y ocupa 4.2 divisiones, o sea un periodo de 84 µs, y como la
+        frecuencia es el inverso del periodo, tenemos que:</p>
+      <p style="text-align: center;">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <mrow>
+            <mo>(</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mn>0.000084</mn>
+            </mfrac>
+            <mo>)</mo>
+            <mo>=</mo>
+            <mtext> 11905 Hz = 11.9 kHz</mtext>
+          </mrow>
+        </math>
+      </p>
+      <p>La medición del osciloscopio muestra el periodo y la frecuencia un poco más exactos.</p>
+      <!-- Imagen de la señal senoidal -->
+      <figcaption style="text-align: center;">
+        <img src="../images\demo\gallery\senoidal.jpg" alt="Generación de onda senoidal">
+      </figcaption>
+      <br>
+
+      <!-- Sección: Generación de onda triangular -->
+      <ul>
+        <li type="circle">
+          <h3>Generación de onda triangular</h3>
+        </li>
+      </ul>
+
+
+      <p>Seleccionamos la señal triangular y movemos el ajuste de frecuencia y de amplitud.</p>
+      <p>La sensibilidad vertical está ajustada a 2.00 V/Div y como la señal se eleva en 6 divisiones, tenemos 12
+        voltios de amplitud. La escala horizontal o de tiempo está en 2 µs/Div y ocupa aproximadamente 2.4 divisiones, o
+        sea un periodo de 4.8 µs, y como la frecuencia es el inverso del periodo, tenemos que:</p>
+      <p style="text-align: center;">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <mrow>
+            <mo>(</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mn>0.0000048</mn>
+            </mfrac>
+            <mo>)</mo>
+            <mo>=</mo>
+            <mtext> 208333 Hz = 208.3 kHz</mtext>
+          </mrow>
+        </math>
+      </p>
+      <p>El osciloscopio muestra una mejor aproximación.</p>
+      <!-- Imagen de la señal triangular -->
+      <figcaption style="text-align: center;">
+        <img src="../images\demo\gallery\triangular.jpg" alt="Generación de onda triangular">
+      </figcaption>
+      <br>
+
+      <!-- Sección: Generación de onda cuadrada -->
+
+      <ul>
+        <li type="circle">
+          <h3>Generación de onda cuadrada</h3>
+        </li>
+      </ul>
+
+      <p>Finalicemos con la onda cuadrada, variamos de nuevo la frecuencia y amplitud.</p>
+      <p>La sensibilidad vertical está ajustada a 2.00 V/Div y como la señal se eleva en 4 divisiones, tenemos 8 voltios
+        de amplitud. La escala horizontal o de tiempo está en 2 ms/Div y ocupa aproximadamente 4.1 divisiones, o sea un
+        periodo de 8.2 ms, y como la frecuencia es el inverso del periodo, tenemos que:</p>
+      <p style="text-align: center;">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <mrow>
+            <mo>(</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mn>0.0082</mn>
+            </mfrac>
+            <mo>)</mo>
+            <mo>=</mo>
+            <mtext> 121.95 Hz</mtext>
+          </mrow>
+        </math>
+      </p>
+      <p>Verificamos las medidas más precisas del osciloscopio.</p>
+      <!-- Imagen de la señal cuadrada -->
+      <figcaption style="text-align: center;">
+        <img src="../images\demo\gallery\cuadrada.jpg" alt="Generación de onda cuadrada">
+      </figcaption>
+
+
+
+      <!-- Comparison Section -->
+      <h2 class="center font-x2">Comparación entre Osciloscopio y Generador de Funciones</h2>
+      <div class="scrollable borderedbox inspace-10 btmspace-30">
+        <table>
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Osciloscopio</th>
+              <th>Generador de Funciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Función Principal</td>
+              <td>Medir y visualizar señales eléctricas</td>
+              <td>Generar diferentes tipos de señales eléctricas</td>
+            </tr>
+            <tr>
+              <td>Tipos de Señales</td>
+              <td>Visualización de señales en tiempo real</td>
+              <td>Señales senoidales, cuadradas, triangulares, y otros tipos de señales moduladas</td>
+            </tr>
+            <tr>
+              <td>Frecuencia de Operación</td>
+              <td>Alta frecuencia, dependiendo del modelo (generalmente hasta varios GHz)</td>
+              <td>Varía según el modelo, típicamente hasta 50 MHz, 100 MHz, o más en modelos avanzados</td>
+            </tr>
+            <tr>
+              <td>Conectividad</td>
+              <td>Entradas de sondas para señales eléctricas</td>
+              <td>Salida BNC para conexión a osciloscopios o circuitos</td>
+            </tr>
+            <tr>
+              <td>Calibración</td>
+              <td>Requiere calibración para mediciones precisas</td>
+              <td>Generalmente, no requiere calibración constante, pero es importante verificar la precisión de la
+                salida</td>
+            </tr>
+            <tr>
+              <td>Visualización de Resultados</td>
+              <td>Gráficos en pantalla que muestran la forma de onda</td>
+              <td>Visualización en pantalla de la señal generada, frecuentemente con especificaciones ajustables</td>
+            </tr>
+            <tr>
+              <td>Aplicaciones</td>
+              <td>Diagnóstico de circuitos, análisis de señales</td>
+              <td>Pruebas de circuitos, diseño de sistemas, simulaciones</td>
+            </tr>
+            <tr>
+              <td>Facilidad de Uso</td>
+              <td>Puede ser complejo para usuarios nuevos, requiere familiaridad con la interfaz</td>
+              <td>Generalmente más fácil de usar, con controles directos para ajustar parámetros de salida</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- Video educativo -->
+      <section id="gallery">
+        <h2 class="center">Material Complementario</h2>
+        <div class="gallery-container">
+          <figure class="gallery-item">
+            <iframe src="https://www.youtube.com/embed/eQWLZxw08bI?si=feV43vo9-fO6o6wf" title="Uso de osciloscopio y generador de funciones en clase."
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <figcaption class="center">Uso de osciloscopio y generador de funciones en clase</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <iframe src="https://www.youtube.com/embed/MA9eQp_jeGs"
+              title="Generador de señales y osciloscopio - Funciones básicas - Primera parte" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <figcaption class="center">Generador de señales y osciloscopio - Funciones básicas - Primera parte
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <iframe src="https://www.youtube.com/embed/jYP_X96Cr-E" title="GENERADOR DE FUNCIONES Y OSCILOSCOPIO"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <figcaption class="center">GENERADOR DE FUNCIONES Y OSCILOSCOPIO</figcaption>
+          </figure>
+          <!-- Puedes añadir más videos de la misma manera -->
+        </div>
+        <nav class="gallery-navigation">
+          <button class="nav-button prev-button">&#10094;</button> <!-- Flecha izquierda -->
+          <button class="nav-button next-button">&#10095;</button> <!-- Flecha derecha -->
+        </nav>
+      </section>
+
+      <!-- Additional Resources Section -->
+      <h2>Recursos Adicionales</h2>
+      <p>Para más información, consulta los siguientes recursos:</p>
+      <ul>
+        <li><a href="https://www.misterworker.com/es/blog/que-es-un-osciloscopio-y-como-usarlo-la-guia-completa-n312">Guía Completa del Osciloscopio</a></li>
+        <li><a href="https://programarfacil.com/electronica/generador-de-funciones/">Guía Completa del Generador de Funciones</a></li>
+        <li><a href="https://medialab.usal.es/experimentacion-digital/">Experimentación Electrónica</a></li>
+      </ul>
+  </div>
+  <div class="clear"></div>
+  </main>
+  </div>
+  <!-- Pie de página -->
+  <div class="wrapper row4">
+    <footer id="footer" class="hoc clear">
+      <!-- Datos de contacto -->
+      <div class="one_half first">
+        <h6 class="heading">Datos de Contacto</h6>
+        <p class="btmspace-30">Para más información, puedes contactarnos a través de los siguientes medios.</p>
+        <ul class="nospace linklist contact">
+          <li><i class="fa fa-map-marker"></i>
+            <address>
+              Av. Universidad 1001, Ciudad Universitaria, 50130 Toluca de Lerdo, Estado de México.
+            </address>
+          </li>
+          <li><i class="fa fa-phone"></i> +52 7223536423</li>
+          <li><i class="fa fa-envelope-o"></i> <a href="mailto:mateojime.per@gmail.com">mateojime.per@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Recursos Adicionales -->
+      <div class="one_quarter">
+        <h6 class="heading">Recursos Útiles</h6>
+        <ul class="nospace linklist">
+          <li><a href="#">Tutorial de Osciloscopios</a></li>
+          <li><a href="#">Uso del Generador de Funciones</a></li>
+          <li><a href="#">Proyectos de Electrónica</a></li>
+          <li><a href="https://www.youtube.com/@ingebpc">Cursos en Línea</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="one_quarter">
+        <h6 class="heading">Síguenos en Redes Sociales</h6>
+        <ul class="nospace linklist">
+          <li><a href="https://www.instagram.com/xjp_1221/?theme=dark"><i class="fa fa-instagram"></i> Instagram</a>
+          </li>
+          <li><a href="https://x.com/xjp_1221"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/mateo-jimenez-perez-678260326/"><i class="fa fa-linkedin"></i>
+              LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="wrapper row5">
+      <div id="copyright" class="hoc clear">
+        <!-- DERECHOS -->
+        <p class="fl_left">Copyright &copy; 2024 - Todos los derechos reservados - <a href="#">XenoTech</a></p>
+        <!-- FIN DERECHOS -->
+      </div>
+    </div>
+    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="../layout/scripts/jquery.min.js"></script>
+    <script src="../layout/scripts/jquery.backtotop.js"></script>
+    <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+    <script src="../layout/scripts/slider.js"></script>
+</body>
+
+</html>

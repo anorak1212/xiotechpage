@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Teoría</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body id="top">
+
+  <!-- Fondo y barra de navegación -->
+  <div class="bgded overlay" style="background-image:url('../images/demo/backgrounds/radioonda.png');">
+    <div class="wrapper row0">
+      <div id="topbar" class="hoc clear">
+        <div class="fl_left">
+          <ul class="nospace">
+            <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="fl_right">
+          <ul class="nospace">
+            <li><i class="fa fa-phone"></i> +52 7223536423</li>
+            <li><i class="fa fa-envelope-o"></i> mateojime.per@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Encabezado y logo -->
+    <div class="wrapper row1">
+      <header id="header" class="hoc clear">
+        <div id="logo" class="fl_left">
+          <a href="../index.html"><img src="../images/demo/logo.png" width="300" height="50" alt="Inicio"></a>
+        </div>
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li><a href="../index.html">Inicio</a></li>
+            <!-- PAGINAS PESTAÑAS -->
+            <li><a class="drop" href="#">Páginas</a>
+              <ul>
+                <li><a href="../pages/guideuso.html">Guía de Uso</a></li>
+                <li><a href="../pages/ejemplospracticos.html">Ejemplos Prácticos</a></li>
+                <li><a href="pages/gallery.html">Galería</a></li>
+                <li><a href="pages/basic-grid.html">Recursos</a></li>
+                <li><a href="pages/basic-grid.html">Preguntas Frecuentes</a></li>
+              </ul>
+            </li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="practica.html">Práctica</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- Ruta de navegación -->
+    <div class="wrapper">
+      <section id="breadcrumb" class="hoc clear">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="teoria.html">Teoría</a></li>
+        </ul>
+        <h6 class="heading" style="font-family: 'Kanit', sans-serif;">Teoría: Osciloscopio y Generador de Funciones</h6>
+      </section>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      <div class="content">
+
+        <!-- Título principal de la sección -->
+        <h1 style="font-family: 'Kanit', sans-serif;">Teoría de Osciloscopio y Generador de Funciones</h1>
+
+        <!-- Imagen introductoria -->
+        <img src="../images/demo/gallery/osciloscopiointro.png " alt="Osciloscopio y generador de funciones"
+          class="imgr borderedbox inspace-5">
+
+        <!-- Descripción básica -->
+        <p>El osciloscopio y el generador de funciones son herramientas fundamentales en la ingeniería electrónica. El
+          osciloscopio permite visualizar señales eléctricas en el dominio del tiempo, mientras que el generador de
+          funciones produce diferentes tipos de señales de salida, esenciales para pruebas y experimentación en
+          circuitos electrónicos.</p>
+
+
+        <!-- Subtítulo: Introducción a los Osciloscopios -->
+        <h2>¿Qué es un Osciloscopio?</h2>
+        <p>Un osciloscopio es un instrumento que muestra la variación de una señal eléctrica a lo largo del tiempo en
+          forma de una gráfica. Los ejes vertical y horizontal representan, respectivamente, el voltaje y el tiempo,
+          proporcionando información clave sobre la frecuencia, la amplitud y la forma de onda de la señal.</p>
+        <figcaption style="text-align: center;">
+          <!-- Imagen del osciloscopio -->
+          <img src="../images/demo/gallery/osciloscopio_detalle.jpg" alt="Detalle de osciloscopio" width="500">
+        </figcaption>
+
+        <h10 class="heading font-x1" style="text-align: center;">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Osciloscopio
+          moderno</h10>
+        <br>
+        <br>
+
+
+        <!-- Secciones y botones del Osciloscopio -->
+        <h2>Secciones del Osciloscopio</h2>
+        <ul>
+          <ol>
+            <li><strong>Interruptor de Encendido (POWER SWITCH):</strong> Permite encender o apagar el osciloscopio con
+              un clic en el interruptor.</li>
+
+            <li><strong>Prueba de Componentes (COMPONENT TEST IN):</strong> Terminales de conexión diseñados para
+              realizar pruebas de componentes electrónicos.</li>
+
+            <li><strong>Conexión a Tierra (GND):</strong> Proporciona un contacto de masa o conexión a tierra.</li>
+
+            <li><strong>Control de Intensidad (INTENS):</strong> Permite ajustar la intensidad o brillo de la señal en
+              pantalla. (No implementado en este osciloscopio).</li>
+
+            <li><strong>Rotador de Trazo (TRACE ROTATOR):</strong> Ajusta el trazo en pantalla para corregir posibles
+              desviaciones causadas por el magnetismo terrestre.</li>
+
+            <li><strong>Enfoque (FOCUS):</strong> Ajusta la nitidez de la señal en pantalla para obtener una
+              visualización más clara. (No implementado en este osciloscopio).</li>
+
+            <li><strong>Entrada Vertical (INPUT Y):</strong> Conector de entrada vertical para el canal A.</li>
+
+            <li><strong>Acoplamiento de Entrada (AC - GND - DC):</strong> Ajusta el tipo de acoplamiento para el canal
+              A. En "AC", la componente de corriente continua está bloqueada. En "GND", la entrada se conecta a masa. En
+              "DC", la señal entra directamente al amplificador y se muestra completa.</li>
+
+            <li><strong>Voltios por División (VOLT/DIV):</strong> Ajusta la escala vertical para el canal A, de 2 mV/div
+              a 10 V/div, permitiendo ver señales grandes o pequeñas.</li>
+
+            <li><strong>Modo Dual (DUAL):</strong> Activa la visualización simultánea de las señales de ambos canales.
+            </li>
+
+            <li><strong>Sumar Canales (ADD):</strong> Combina las señales de CH-A y CH-B. Al presionar "PULL INVERT",
+              las señales se restan en lugar de sumarse.</li>
+
+            <li><strong>Canal B (CH B):</strong> Activa la visualización de la señal en el canal B.</li>
+
+            <li><strong>Canal A (CH A):</strong> Activa la visualización de la señal en el canal A.</li>
+
+            <li><strong>Acoplamiento de Entrada (AC - GND - DC) para Canal B:</strong> Funciona de manera similar al
+              canal A, con opciones de acoplamiento AC, GND, y DC.</li>
+
+            <li><strong>Entrada Vertical (INPUT X) para Canal B:</strong> Conector de entrada vertical para el canal B.
+            </li>
+
+            <li><strong>Voltios por División (VOLT/DIV) para Canal B:</strong> Ajuste de escala vertical para el canal
+              B, similar al canal A.</li>
+
+            <li><strong>Calibración (CAL):</strong> Terminal que emite una señal de calibración de 0,5 Vpp a
+              aproximadamente 1 kHz.</li>
+
+            <li><strong>Invertir Polaridad (PULL INVERT):</strong> Cambia la polaridad de la señal del canal B cuando se
+              presiona, permitiendo operaciones de suma y resta de señales.</li>
+
+            <li><strong>Posición Vertical (VERTICAL POSITION) de CH-B:</strong> Controla la posición vertical de la
+              señal del canal B en la pantalla.</li>
+
+            <li><strong>Entrada de Sincronización Externa (EXT. TRIG):</strong> Permite la entrada de una señal externa
+              para la sincronización (trigger).</li>
+
+            <li><strong>Selector de Fuente (SOURCE):</strong> Permite seleccionar la fuente de sincronización. Las
+              opciones incluyen CH-A, CH-B, y una fuente externa a través del conector EXT. TRIG.</li>
+
+            <li><strong>Modo de Sincronización (SYNCR):</strong> Ajusta el tipo de sincronización: "AC" para
+              sincronización normal, "HF REJ" para filtrar frecuencias altas, y "TV" para señales de video o televisión.
+              (Este control no está implementado).</li>
+
+            <li><strong>Pendiente de Sincronización (SLOPE):</strong> Determina la polaridad de la pendiente en la que
+              se desea la sincronización.</li>
+
+            <li><strong>Amplificación por Cinco (PULL 5XMAG):</strong> Amplifica la velocidad de barrido cinco veces
+              cuando está activado.</li>
+
+            <li><strong>Modo XY (X-Y):</strong> Permite ver la señal del canal A en el eje vertical y la del canal B en
+              el eje horizontal.</li>
+
+            <li><strong>Nivel de Sincronización (TRIGGERING LEVEL):</strong> Controla el nivel de disparo o
+              sincronización para establecer el punto de partida de la visualización de la señal.</li>
+
+            <li><strong>Posición Horizontal (HORIZONTAL POSITION):</strong> Ajusta la posición horizontal de la señal en
+              pantalla.</li>
+
+            <li><strong>Tiempo por División (SWEEP - TIME/DIV):</strong> Controla la velocidad de barrido en pantalla,
+              ajustable de 0,1 ms/div a 2 s/div en 23 niveles.</li>
+
+            <li><strong>Posición Vertical (VERTICAL POSITION) de CH-A:</strong> Controla la posición vertical de la
+              señal del canal A en la pantalla.</li>
+          </ol>
+
+        </ul>
+        <figcaption style="text-align: center;">
+          <img src="../images/demo/gallery/Selectordefunciones.jpg" alt="Osciloscopio" width="900">
+        </figcaption>
+        <h10 class="heading font-x1" style="text-align: center;">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Controles
+          de Osciloscopio</h10>
+        <br>
+        <br>
+
+        <!-- Subtítulo: Generador de Funciones -->
+        <h2>¿Qué es un Generador de Funciones?</h2>
+        <p>El generador de funciones es un dispositivo que crea señales de diferentes formas, como ondas senoidales,
+          cuadradas y triangulares. Estas formas de onda son cruciales para probar circuitos y analizar sus respuestas a
+          distintos tipos de señales, como en pruebas de frecuencia de audio y pulsos digitales.</p>
+
+
+        <!-- Secciones y botones del Generador de Funciones -->
+        <h2>Secciones del Generador de Funciones</h2>
+        <ol>
+          <li><strong>Selector de Frecuencia:</strong> Control ajustable de la frecuencia dentro de la banda
+            seleccionada. La frecuencia final se obtiene multiplicando el valor del dial por el límite inferior de la
+            banda elegida en Hz.</li>
+
+          <li><strong>Desfase:</strong> Permite aplicar un desfase a la señal de salida, que puede variar de -180° a
+            +180° en incrementos de 15°.</li>
+
+          <li><strong>Interruptor de Encendido (POWER SWITCH):</strong> Interruptor para encender o apagar el generador
+            de funciones con un clic.</li>
+
+          <li><strong>Offset:</strong> Controla la tensión continua superpuesta a la señal de salida, ajustable entre
+            -10 y +10 voltios. La posición de trabajo normal es "0".</li>
+
+          <li><strong>Salida TTL:</strong> Conector de salida de impulsos en niveles TTL, con la frecuencia
+            seleccionada. Permite la conexión de más de 10 dispositivos TTL.</li>
+
+          <li><strong>Salida de Señal:</strong> Conector de salida para la señal seleccionada (senoidal, cuadrada o
+            triangular) según los selectores de salida.</li>
+
+          <li><strong>Control de Amplitud:</strong> Ajuste de la amplitud de salida, controlado de forma continua.</li>
+
+          <li><strong>Selector de Salida Senoidal:</strong> Selecciona la señal de salida como una onda senoidal. Para
+            activar, basta con hacer clic en este botón.</li>
+
+          <li><strong>Selector de Salida Cuadrada:</strong> Selecciona la señal de salida como una onda cuadrada. Para
+            activar, basta con hacer clic en este botón.</li>
+
+          <li><strong>Selector de Salida Triangular:</strong> Selecciona la señal de salida como una onda triangular.
+            Para activar, basta con hacer clic en este botón.</li>
+
+          <li><strong>Selectores de Banda:</strong> Permiten elegir el rango de frecuencia (o década) que controla el
+            selector de frecuencia. Al presionar, el selector desactiva cualquier otra tecla del conjunto y se fija en
+            la posición seleccionada. Para elegir un rango de frecuencia, basta con hacer clic en el rango deseado.</li>
+        </ol>
+
+        <!-- Imagen del generador de funciones -->
+        <figcaption style="text-align: center;">
+          <img src="../images/demo/gallery/generador.png" alt="Selector de funciones" width="900">
+        </figcaption>
+        <h10 class="heading font-x1" style="text-align: center;">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Controles
+          de Osciloscopio</h10>
+        <br>
+        <br>
+
+        <!-- Tabla: Comparación entre Osciloscopio y Generador -->
+        <h2 class="center font-x2">Comparación entre Osciloscopio y Generador de Funciones</h2>
+        <div class="scrollable borderedbox inspace-10 btmspace-30">
+          <table>
+            <thead>
+              <tr>
+                <th>Característica</th>
+                <th>Osciloscopio</th>
+                <th>Generador de Funciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Función Principal</td>
+                <td>Visualizar señales eléctricas en el tiempo para analizar su comportamiento.</td>
+                <td>Generar señales de diferentes formas de onda (senoidal, cuadrada, triangular) para pruebas en
+                  circuitos.</td>
+              </tr>
+              <tr>
+                <td>Control de Frecuencia</td>
+                <td>No aplica. Solo muestra la frecuencia de las señales entrantes.</td>
+                <td>Permite ajustar la frecuencia de la señal generada, desde pocos Hz hasta varios MHz.</td>
+              </tr>
+              <tr>
+                <td>Escala Ajustable</td>
+                <td>Ajuste en escala vertical (voltaje) y horizontal (tiempo).</td>
+                <td>Ajuste en amplitud (voltaje) y frecuencia (Hz) de la señal generada.</td>
+              </tr>
+              <tr>
+                <td>Aplicación</td>
+                <td>Diagnóstico de circuitos, identificación de problemas de señal y medición de parámetros eléctricos.
+                </td>
+                <td>Prueba de respuesta de circuitos, simulación de señales de entrada y análisis de comportamiento bajo
+                  diferentes condiciones.</td>
+              </tr>
+              <tr>
+                <td>Precisión de Medición</td>
+                <td>Alta precisión en la visualización de señales analógicas y digitales.</td>
+                <td>Precisión moderada; depende de la configuración y el tipo de generador.</td>
+              </tr>
+              <tr>
+                <td>Interfaces Modernas</td>
+                <td>Generalmente incluye conectividad USB, Ethernet o Wi-Fi para transferencia de datos y control
+                  remoto.</td>
+                <td>Algunos modelos avanzados incluyen conectividad USB o LAN para integrarse en entornos de
+                  automatización.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Aplicaciones prácticas -->
+        <h2 class="center font-x2">Aplicaciones Prácticas</h2>
+
+        <div class="content">
+          <div class="img-container btmspace-15">
+            <img src="../images/demo/gallery/análisis de señales de audio.avif"
+              alt="Uso de un osciloscopio en un laboratorio de pruebas" class="image-left"
+              style="width: 45%; margin-right: 10px;">
+            <p style="text-align: justify;">El osciloscopio es uno de los instrumentos más versátiles y fundamentales en
+              la electrónica y la ingeniería de comunicaciones. Este dispositivo permite observar el comportamiento de
+              las señales eléctricas en tiempo real, facilitando el análisis de su forma de onda, amplitud, frecuencia y
+              otras características importantes. Esto es esencial para diagnosticar problemas, ajustar circuitos y
+              asegurar que el diseño cumpla con los requisitos específicos de funcionamiento.
+              <br>
+              Por ejemplo, en circuitos de audio, el ingeniero puede verificar la señal para asegurarse de que la salida
+              esté libre de ruido o distorsión. En sistemas de comunicación, se utiliza para observar señales moduladas
+              y verificar que los datos transmitidos no presenten errores ni pérdidas. Además, se pueden realizar
+              estudios de estabilidad temporal para analizar cómo responden los circuitos ante señales continuas y
+              transitorias, optimizando el rendimiento general del diseño electrónico.
+            </p>
+          </div>
+
+          <div class="img-container btmspace-15">
+            <p style="text-align: justify;">El generador de funciones, por otro lado, es una herramienta que permite al
+              ingeniero introducir señales controladas de prueba en el circuito bajo análisis. Este dispositivo genera
+              distintas formas de onda, como senoidales, cuadradas y triangulares, que pueden variar en frecuencia y
+              amplitud. Esto es especialmente útil en la simulación de condiciones de entrada específicas para medir la
+              respuesta de sistemas electrónicos y evaluar su robustez y comportamiento.
+              <br>
+              En aplicaciones prácticas, como el análisis de filtros de señal, el generador de funciones se utiliza para
+              introducir una señal a una frecuencia determinada y, con el uso del osciloscopio, se puede observar si el
+              filtro atenúa o amplifica la señal de manera correcta. Este proceso es fundamental para el desarrollo de
+              dispositivos como altavoces, micrófonos, radios y cualquier sistema que requiera un manejo preciso de
+              señales de entrada y salida.
+            </p>
+
+            <img src="../images/demo/gallery/radiocomunicacion.jpg" alt="Generador de funciones" class="image-right"
+              style="width: 45%; margin-left: 10px;">
+
+          </div>
+        </div>
+
+        <!-- Consejos para el Uso Eficiente -->
+        <h2 class="center font-x2">Consejos para el Uso Eficiente</h2>
+        <ul class="btmspace-30">
+          <li><strong>Calibración:</strong> Realiza una calibración periódica de los instrumentos para asegurar la
+            precisión de las mediciones. Esto es crucial, especialmente en aplicaciones de alta precisión donde una
+            desviación mínima puede causar errores significativos. Al calibrar el osciloscopio, asegúrate de que su base
+            de tiempo, ganancia y otros ajustes estén alineados con los valores estándar.</li>
+          <li><strong>Manejo de Ruido:</strong> Usa cables blindados de buena calidad y asegúrate de conexiones firmes
+            para reducir interferencias que puedan afectar las mediciones. En laboratorios y entornos industriales, el
+            ruido electromagnético de otros equipos puede distorsionar las señales medidas, así que mantén los cables
+            organizados y evita cruzar cables de señal con cables de alimentación.</li>
+          <li><strong>Configuración de Escala:</strong> Ajusta las escalas del osciloscopio de acuerdo con la amplitud y
+            frecuencia esperadas de la señal. Esto evita la saturación de la señal y garantiza una visualización clara.
+            Además, es útil familiarizarse con el ajuste de base de tiempo y sensibilidad vertical para capturar tanto
+            señales rápidas como lentas en una representación detallada.</li>
+          <li><strong>Evita Sobrecargar el Circuito:</strong> Al conectar el generador de funciones, ajusta la amplitud
+            de salida para que no exceda las especificaciones del circuito de prueba. Esto es importante porque, al
+            introducir señales de alta amplitud, podrías dañar componentes sensibles del circuito o alterar los
+            resultados de la prueba.</li>
+          <li><strong>Usa Señales de Referencia:</strong> Antes de iniciar una prueba, emplea una señal de referencia
+            para verificar que el equipo esté funcionando correctamente. Esto te permite identificar cualquier problema
+            de configuración en los instrumentos antes de conectarlos al circuito de prueba.</li>
+          <li><strong>Comprueba la Estabilidad de la Fuente de Poder:</strong> Una fuente de poder estable es
+            fundamental para obtener mediciones precisas. Si hay fluctuaciones en el suministro de energía, esto puede
+            afectar las señales observadas en el osciloscopio, dificultando la interpretación de resultados.</li>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- Video educativo -->
+        <section id="gallery">
+          <h2 class="center">Material Complementario</h2>
+          <div class="gallery-container">
+            <figure class="gallery-item">
+              <iframe src="https://www.youtube.com/embed/FiGcWWLPbJo?si=PfgQN0SwqubY6rI7"
+                title="¿Qué es un Osciloscopio?" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <figcaption class="center">¿Qué es un Osciloscopio?</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <iframe src="https://www.youtube.com/embed/MA9eQp_jeGs"
+                title="Generador de señales y osciloscopio - Funciones básicas - Primera parte" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <figcaption class="center">Generador de señales y osciloscopio - Funciones básicas - Primera parte
+              </figcaption>
+            </figure>
+            <!-- Puedes añadir más videos de la misma manera -->
+          </div>
+          <nav class="gallery-navigation">
+            <button class="nav-button prev-button">&#10094;</button> <!-- Flecha izquierda -->
+            <button class="nav-button next-button">&#10095;</button> <!-- Flecha derecha -->
+          </nav>
+        </section>
+
+
+
+
+
+      </div>
+      <div class="clear"></div>
+    </main>
+  </div>
+
+  <!-- Pie de página -->
+  <div class="wrapper row4">
+    <footer id="footer" class="hoc clear">
+      <!-- Datos de contacto -->
+      <div class="one_half first">
+        <h6 class="heading">Datos de Contacto</h6>
+        <p class="btmspace-30">Para más información, puedes contactarnos a través de los siguientes medios.</p>
+        <ul class="nospace linklist contact">
+          <li><i class="fa fa-map-marker"></i>
+            <address>
+              Av. Universidad 1001, Ciudad Universitaria, 50130 Toluca de Lerdo, Estado de México.
+            </address>
+          </li>
+          <li><i class="fa fa-phone"></i> +52 7223536423</li>
+          <li><i class="fa fa-envelope-o"></i> <a href="mailto:mateojime.per@gmail.com">mateojime.per@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Recursos Adicionales -->
+      <div class="one_quarter">
+        <h6 class="heading">Recursos Útiles</h6>
+        <ul class="nospace linklist">
+          <li><a href="#">Tutorial de Osciloscopios</a></li>
+          <li><a href="#">Uso del Generador de Funciones</a></li>
+          <li><a href="#">Proyectos de Electrónica</a></li>
+          <li><a href="https://www.youtube.com/@ingebpc">Cursos en Línea</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="one_quarter">
+        <h6 class="heading">Síguenos en Redes Sociales</h6>
+        <ul class="nospace linklist">
+          <li><a href="https://www.instagram.com/xjp_1221/?theme=dark"><i class="fa fa-instagram"></i> Instagram</a>
+          </li>
+          <li><a href="https://x.com/xjp_1221"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/mateo-jimenez-perez-678260326/"><i class="fa fa-linkedin"></i>
+              LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear"> 
+      <!-- DERECHOS -->
+      <p class="fl_left">Copyright &copy; 2024 - Todos los derechos reservados - <a href="#">XenoTech</a></p>
+      <!-- FIN DERECHOS -->
+    </div>
+  </div>
+  <!-- FINAL PARTE -->
+  <script src="../layout/scripts/jquery.min.js"></script>
+  <script src="../layout/scripts/jquery.backtotop.js"></script>
+  <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+  <script src="../layout/scripts/slider.js"></script>
+</body>
+
+</html>

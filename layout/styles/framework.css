@@ -1,0 +1,745 @@
+/* Estilos Generales
+--------------------------------------------------------------------------------------------------------------- */
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* Desplazamiento vertical siempre visible, horizontal oculto */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6em;
+    /* Tamaño de fuente y altura de línea por defecto */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* Incluye padding y borde en el tamaño total */
+}
+
+/* Clases de Texto
+--------------------------------------------------------------------------------------------------------------- */
+.bold {
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+.center {
+    text-align: center;
+    /* Alinear texto al centro */
+}
+
+.right {
+    text-align: right;
+    /* Alinear texto a la derecha */
+}
+
+.uppercase {
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+}
+
+.capitalise {
+    text-transform: capitalize;
+    /* Capitalizar la primera letra de cada palabra */
+}
+
+.hidden {
+    display: none;
+    /* Ocultar elemento */
+}
+
+.nospace {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* Eliminar margen, padding y lista de estilo */
+}
+
+/* Clases de Visualización
+--------------------------------------------------------------------------------------------------------------- */
+.block {
+    display: block;
+    /* Elemento en bloque */
+}
+
+.inline * {
+    display: inline-block;
+    /* Elementos en línea */
+}
+
+.inline *:last-child {
+    margin-right: 0;
+    /* Sin margen derecho para el último hijo */
+}
+
+.pushright li {
+    margin-right: 20px;
+    /* Margen derecho para elementos de lista */
+}
+
+.pushright li:last-child {
+    margin-right: 0;
+    /* Sin margen derecho para el último elemento de lista */
+}
+
+/* Estilos de Cajas
+--------------------------------------------------------------------------------------------------------------- */
+.borderedbox {
+    border: 1px solid;
+    /* Borde alrededor del elemento */
+}
+
+/* Clases de Overlay
+--------------------------------------------------------------------------------------------------------------- */
+.overlay {
+    position: relative;
+    z-index: 1;
+    /* Z-index para superposición */
+}
+
+.overlay::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    /* Z-index detrás del contenido */
+}
+
+/* Estilos de Fondo
+--------------------------------------------------------------------------------------------------------------- */
+.bgded {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Fondo cubre todo el elemento */
+}
+
+/* Clases de Formas
+--------------------------------------------------------------------------------------------------------------- */
+.circle {
+    border-radius: 50%;
+    /* Bordes redondeados */
+    background-clip: padding-box;
+    /* Recortar el fondo en el borde */
+}
+
+/* Botones
+--------------------------------------------------------------------------------------------------------------- */
+.btn {
+    display: inline-block;
+    padding: 15px 25px 17px;
+    text-transform: uppercase;
+    border: 1px solid;
+    /* Borde para botones */
+}
+
+.btn.medium {
+    padding: 10px 20px 12px;
+    /* Botón de tamaño medio */
+}
+
+.btn.small {
+    padding: 8px 18px 10px;
+    text-transform: none;
+    /* Botón pequeño sin transformación de texto */
+}
+
+/* Clases de Limpiar y Agrupar
+--------------------------------------------------------------------------------------------------------------- */
+.clear,
+.group {
+    display: block;
+    /* Mostrar en bloque */
+}
+
+.clear::before,
+.clear::after,
+.group::before,
+.group::after {
+    display: table;
+    content: "";
+    /* Generar un contexto de tabla */
+}
+
+.clear,
+.clear::after,
+.group,
+.group::after {
+    clear: both;
+    /* Limpiar flotantes */
+}
+
+/* Enlaces
+--------------------------------------------------------------------------------------------------------------- */
+a {
+    outline: none;
+    text-decoration: none;
+    /* Sin subrayado y contorno */
+}
+
+/* Clases de Flotación
+--------------------------------------------------------------------------------------------------------------- */
+.fl_left,
+.imgl {
+    float: left;
+    /* Flotar a la izquierda */
+}
+
+.fl_right,
+.imgr {
+    float: right;
+    /* Flotar a la derecha */
+}
+
+/* Imágenes
+--------------------------------------------------------------------------------------------------------------- */
+img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: normal;
+    vertical-align: middle;
+    /* Alinear verticalmente */
+}
+
+.imgl {
+    margin: 0 15px 10px 0;
+    clear: left;
+    /* Limpiar flotantes a la izquierda */
+}
+
+.imgr {
+    margin: 0 0 10px 15px;
+    clear: right;
+    /* Limpiar flotantes a la derecha */
+}
+
+/* Fuentes
+--------------------------------------------------------------------------------------------------------------- */
+body,
+input,
+textarea,
+select {
+    font-family: Verdana, Geneva, sans-serif;
+    /* Fuente general */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+    font-family: "Kanit", "Times New Roman", Times, serif;
+    /* Fuente para encabezados */
+}
+
+/* Formularios
+--------------------------------------------------------------------------------------------------------------- */
+form,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+    border: none;
+    /* Sin márgenes, padding y borde para formularios */
+}
+
+legend {
+    display: none;
+    /* Ocultar leyenda */
+}
+
+label,
+input,
+textarea,
+select,
+button {
+    display: block;
+    resize: none;
+    outline: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    vertical-align: middle;
+    /* Alinear verticalmente */
+}
+
+label {
+    margin-bottom: 5px;
+    /* Margen inferior para etiquetas */
+}
+
+:required,
+:invalid {
+    outline: none;
+    box-shadow: none;
+    /* Sin contorno ni sombra para campos requeridos o inválidos */
+}
+
+/* Estilos Generales
+--------------------------------------------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+    margin: 0 0 20px 0;
+    font-size: 22px;
+    line-height: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    /* Estilo general para encabezados */
+}
+
+.heading.nospace {
+    margin: 0;
+    /* Sin margen para encabezados */
+}
+
+address {
+    font-style: normal;
+    font-weight: normal;
+    /* Estilo normal para direcciones */
+}
+
+/* Separadores
+--------------------------------------------------------------------------------------------------------------- */
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: solid;
+    border-width: 1px 0 0 0;
+    /* Separador horizontal */
+}
+
+/* Clases de Tamaño de Fuente
+--------------------------------------------------------------------------------------------------------------- */
+.font-xs {
+    font-size: .8rem;
+    /* Tamaño de fuente extra pequeño */
+}
+
+.font-x1 {
+    font-size: 1.2rem;
+    /* Tamaño de fuente pequeño */
+}
+
+.font-x2 {
+    font-size: 1.8rem;
+    /* Tamaño de fuente mediano */
+}
+
+.font-x3 {
+    font-size: 2.8rem;
+    /* Tamaño de fuente grande */
+}
+
+/* Contenedor Principal
+--------------------------------------------------------------------------------------------------------------- */
+.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    word-wrap: break-word;
+    /* Ajustar palabras largas */
+}
+
+/* Clase para Centrado Horizontal
+--------------------------------------------------------------------------------------------------------------- */
+.hoc {
+    display: block;
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+}
+
+/* Sobrescritura de HTML5
+--------------------------------------------------------------------------------------------------------------- */
+address,
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+    margin: 0;
+    padding: 0;
+    /* Mostrar elementos de HTML5 como bloques */
+}
+
+/* Estilos de Grid
+--------------------------------------------------------------------------------------------------------------- */
+.one_half,
+.one_third,
+.two_third,
+.one_quarter,
+.two_quarter,
+.three_quarter {
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 3.06748466257669%;
+    list-style: none;
+    /* Elementos de grid en línea */
+}
+
+.first {
+    margin-left: 0;
+    clear: left;
+    /* Limpiar flotantes para el primer elemento */
+}
+
+.one_quarter {
+    width: 22.69938650306748%;
+    /* Ancho para un cuarto */
+}
+
+.one_third {
+    width: 31.28834355828221%;
+    /* Ancho para un tercio */
+}
+
+.one_half,
+.two_quarter {
+    width: 48.46625766871166%;
+    /* Ancho para la mitad y dos cuartos */
+}
+
+.two_third {
+    width: 65.6441717791411%;
+    /* Ancho para dos tercios */
+}
+
+.three_quarter {
+    width: 74.23312883435584%;
+    /* Ancho para tres cuartos */
+}
+
+/* Clases de Espaciado
+--------------------------------------------------------------------------------------------------------------- */
+.btmspace-10 {
+    margin-bottom: 10px;
+    /* Espacio inferior de 10px */
+}
+
+.btmspace-15 {
+    margin-bottom: 15px;
+    /* Espacio inferior de 15px */
+}
+
+.btmspace-30 {
+    margin-bottom: 30px;
+    /* Espacio inferior de 30px */
+}
+
+.btmspace-50 {
+    margin-bottom: 50px;
+    /* Espacio inferior de 50px */
+}
+
+.btmspace-80 {
+    margin-bottom: 80px;
+    /* Espacio inferior de 80px */
+}
+
+.inspace-5 {
+    padding: 5px;
+    /* Espaciado interno de 5px */
+}
+
+.inspace-10 {
+    padding: 10px;
+    /* Espaciado interno de 10px */
+}
+
+.inspace-15 {
+    padding: 15px;
+    /* Espaciado interno de 15px */
+}
+
+.inspace-30 {
+    padding: 30px;
+    /* Espaciado interno de 30px */
+}
+
+.inspace-50 {
+    padding: 50px;
+    /* Espaciado interno de 50px */
+}
+
+.inspace-80 {
+    padding: 80px;
+    /* Espaciado interno de 80px */
+}
+
+/* Estilos de la galería */
+/* Contenedor principal de la galería */
+#gallery {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-item iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* Centrar el texto de las descripciones */
+/* Contenedor principal de la galería */
+#gallery {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-item iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* Centrar el texto de las descripciones */
+figcaption.center {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Estilos de navegación */
+.gallery-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-75%);
+}
+
+.nav-button {
+    color: #ffffff;
+    background: rgba(34, 34, 34, 0.6);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 12px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    outline: none;
+}
+
+.nav-button:hover {
+    background: rgba(95, 0, 0, 0.8);
+    /* Oscurece al pasar el cursor */
+    transform: scale(1.1);
+    /* Efecto de agrandamiento suave */
+}
+
+/* Centrado del texto de descripción */
+.gallery-item figcaption {
+    text-align: center;
+    font-size: 1rem;
+    color: #333333;
+    margin-top: 10px;
+}
+
+/* Tabla de Comparación
+--------------------------------------------------------------------------------------------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.scrollable {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.borderedbox {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Encabezados y Secciones
+--------------------------------------------------------------------------------------------------------------- */
+.center {
+    text-align: center;
+}
+
+.font-x2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Lista de Consejos
+--------------------------------------------------------------------------------------------------------------- */
+ul {
+    padding-left: 20px;
+    line-height: 1.8em;
+    font-size: 0.9rem;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Espaciado para mejorar la legibilidad
+--------------------------------------------------------------------------------------------------------------- */
+.btmspace-10 {
+    margin-bottom: 10px;
+}
+
+.btmspace-15 {
+    margin-bottom: 15px;
+}
+
+.btmspace-30 {
+    margin-bottom: 30px;
+}
+
+.inspace-10 {
+    padding: 10px;
+}
+
+.inspace-15 {
+    padding: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.font-x2 {
+    font-size: 1.5em;
+}
+
+.btmspace-15 {
+    margin-bottom: 15px;
+}
+
+.btmspace-30 {
+    margin-bottom: 30px;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.image-right {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Estilo general para el bloque de código */
+  
+.code-block {
+    font-family: monospace;
+    .keyword {
+        color: #79c27b; /* Un tono de rojo para las palabras clave */
+        font-weight: bold;
+      }
+      
+      .comment {
+        color: #6272a4; /* Un tono de azul verdoso para los comentarios */
+        font-style: italic;
+      }
+  }
+
+
+/* Estilos para centrar fórmulas y usar Times New Roman */
+.formula {
+    text-align: center; /* Centrar el texto */
+    font-family: 'Times New Roman', Times, serif; /* Fuente en Times New Roman */
+    font-size: 1.5em; /* Aumentar tamaño de fuente */
+    margin: 1.5em 0; /* Espaciado vertical */
+    border: 1px solid #000; /* Bordes para resaltar la fórmula */
+    padding: 0.5em; /* Espaciado interno */
+    display: inline-block; /* Mostrar como bloque en línea */
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centra el video horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    border: 2px solid #ccc; /* Marco alrededor del video */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo del marco */
+  }
+  
+  .video-container iframe {
+    max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
+  }
+  
