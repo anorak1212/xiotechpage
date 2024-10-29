@@ -701,45 +701,193 @@ ul li {
 }
 
 /* Estilo general para el bloque de código */
-  
+
 .code-block {
     font-family: monospace;
+
     .keyword {
-        color: #79c27b; /* Un tono de rojo para las palabras clave */
+        color: #79c27b;
+        /* Un tono de rojo para las palabras clave */
         font-weight: bold;
-      }
-      
-      .comment {
-        color: #6272a4; /* Un tono de azul verdoso para los comentarios */
+    }
+
+    .comment {
+        color: #6272a4;
+        /* Un tono de azul verdoso para los comentarios */
         font-style: italic;
-      }
-  }
+    }
+}
 
 
 /* Estilos para centrar fórmulas y usar Times New Roman */
 .formula {
-    text-align: center; /* Centrar el texto */
-    font-family: 'Times New Roman', Times, serif; /* Fuente en Times New Roman */
-    font-size: 1.5em; /* Aumentar tamaño de fuente */
-    margin: 1.5em 0; /* Espaciado vertical */
-    border: 1px solid #000; /* Bordes para resaltar la fórmula */
-    padding: 0.5em; /* Espaciado interno */
-    display: inline-block; /* Mostrar como bloque en línea */
-    background-color: #f9f9f9; /* Fondo claro */
-    border-radius: 5px; /* Bordes redondeados */
+    text-align: center;
+    /* Centrar el texto */
+    font-family: 'Times New Roman', Times, serif;
+    /* Fuente en Times New Roman */
+    font-size: 1.5em;
+    /* Aumentar tamaño de fuente */
+    margin: 1.5em 0;
+    /* Espaciado vertical */
+    border: 1px solid #000;
+    /* Bordes para resaltar la fórmula */
+    padding: 0.5em;
+    /* Espaciado interno */
+    display: inline-block;
+    /* Mostrar como bloque en línea */
+    background-color: #f9f9f9;
+    /* Fondo claro */
+    border-radius: 5px;
+    /* Bordes redondeados */
 }
 
 .video-container {
     display: flex;
-    justify-content: center; /* Centra el video horizontalmente */
-    margin: 20px 0; /* Espaciado superior e inferior */
-    border: 2px solid #ccc; /* Marco alrededor del video */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-    background-color: #f9f9f9; /* Color de fondo del marco */
-  }
-  
-  .video-container iframe {
-    max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
-  }
-  
+    justify-content: center;
+    /* Centra el video horizontalmente */
+    margin: 20px 0;
+    /* Espaciado superior e inferior */
+    border: 2px solid #ccc;
+    /* Marco alrededor del video */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 10px;
+    /* Espaciado interno */
+    background-color: #f9f9f9;
+    /* Color de fondo del marco */
+}
+
+.video-container iframe {
+    max-width: 100%;
+    /* Asegura que el video no exceda el ancho del contenedor */
+}
+
+.panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente para resaltar el panel */
+    transition: transform 300ms ease;
+    z-index: -1;
+    transform: scale(0);
+    /* Inicialmente oculto */
+}
+
+.panel div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: beige;
+    border-radius: 8px;
+    /* Bordes redondeados para mejor estética */
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para resaltar el panel */
+    z-index: 1000;
+    text-align: center;
+    /* Centra el texto dentro del panel */
+}
+
+/* Mostrar el panel */
+.panel[data-on='on'] {
+    transform: scale(1);
+    z-index: 1000;
+    /* Asegura que esté sobre otros elementos */
+}
+
+/* Ocultar el panel */
+.panel[data-on='off'] {
+    transform: scale(0);
+}
+
+/* Galería */
+#gallery {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+    /* Transición suave al deslizar */
+}
+
+.gallery-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    animation: slideIn 0.8s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.gallery-item iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* Navegación de la Galería */
+.gallery-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#gallery:hover .gallery-navigation {
+    opacity: 1;
+}
+
+.nav-button {
+    color: #ffffff;
+    background: rgba(34, 34, 34, 0.6);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 12px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    outline: none;
+    border-radius: 50%;
+}
+
+.nav-button:hover {
+    background: rgba(95, 0, 0, 0.8);
+    transform: scale(1.1);
+    /* Efecto de agrandamiento suave */
+}
+
+/* Descripción centrada en cada ítem */
+figcaption.center {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Efecto de desvanecimiento en las descripciones */
+.gallery-item:hover figcaption.center {
+    opacity: 1;
+}

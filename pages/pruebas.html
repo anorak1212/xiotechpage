@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Uso del Osciloscopio y Generador de Funciones</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Enlace a Google Fonts: Kanit -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="center">Galería de Imágenes</h1>
+    </header>
+
+    <section class="wrapper center">
+        <div class="tabs">
+            <button class="tab-button" onclick="openTab('tab1')">Pestaña 1</button>
+            <button class="tab-button" onclick="openTab('tab2')">Pestaña 2</button>
+        </div>
+        
+        <div id="tab1" class="tab-content">
+            <div class="gallery-container">
+                <figure class="gallery-item">
+                    <img src="../images/demo/gallery/01.png" alt="Imagen 1">
+                    <figcaption>Descripción de Imagen 1</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="../images/demo/gallery/01.png" alt="Imagen 2">
+                    <figcaption>Descripción de Imagen 2</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="../images/demo/gallery/01.png" alt="Imagen 3">
+                    <figcaption>Descripción de Imagen 3</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="../images/demo/gallery/01.png" alt="Imagen 4">
+                    <figcaption>Descripción de Imagen 4</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div id="tab2" class="tab-content" style="display: none;">
+            <div class="gallery-container">
+                <figure class="gallery-item">
+                    <img src="imagen1.jpg" alt="Imagen 1">
+                    <figcaption>Descripción de Imagen 1</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="imagen2.jpg" alt="Imagen 2">
+                    <figcaption>Descripción de Imagen 2</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="imagen3.jpg" alt="Imagen 3">
+                    <figcaption>Descripción de Imagen 3</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="imagen4.jpg" alt="Imagen 4">
+                    <figcaption>Descripción de Imagen 4</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+    <!-- Botón para mostrar el aviso -->
+    <button onclick="document.getElementById('aviso').setAttribute('data-on','on')">
+        Mostrar aviso
+    </button>
+
+    <!-- Panel de comunicación -->
+    <div class="panel" id="aviso" data-on="off" onclick="this.setAttribute('data-on','off')">
+        <div>
+            <p>Esto es un panel de comunicación</p>
+            <p>(Pulsar para cerrar)</p>
+        </div>
+    </div>
+</body>
+
+</html>
