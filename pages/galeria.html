@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body id="top">
@@ -42,6 +43,7 @@
             <!-- PAGINAS PESTAÑAS -->
             <li><a class="drop" href="#">Páginas</a>
               <ul>
+                <li><a href="../pages/teoria.html">Teoría</a></li>
                 <li><a href="../pages/guideuso.html">Guía de Uso</a></li>
                 <li><a href="../pages/ejemplospracticos.html">Ejemplos Prácticos</a></li>
                 <li><a href="pages/basic-grid.html">Recursos</a></li>
@@ -54,37 +56,43 @@
       </header>
     </div>
 
-    <!-- ################################################################################################ -->
-    <!-- ################################################################################################ -->
-    <!-- ################################################################################################ -->
     <div class="wrapper">
       <section id="breadcrumb" class="hoc clear">
-        <!-- ################################################################################################ -->
         <ul>
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="galeria.html">Galería</a></li>
         </ul>
-        <!-- ################################################################################################ -->
         <h6 class="heading" style="font-family: 'Kanit', sans-serif;">Galería</h6>
-        <!-- ################################################################################################ -->
       </section>
     </div>
-    <!-- ################################################################################################ -->
   </div>
-  <!-- End Top Background Image Wrapper -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
   <div class="wrapper row3">
     <main class="hoc container clear">
       <!-- main body -->
-      <!-- ################################################################################################ -->
       <div class="content">
         <div id="gallery">
           <figure>
             <ul class="nospace clear page-1"> <!-- Página 1 -->
-              <li><header class="heading" style="font-family: 'Kanit', sans-serif;">SIS</header></li>
-              <li class="one_quarter first" ><a href="#"><img src="../images/demo/avatar.png" alt=""></a></li>
+              <li>
+                <header class="heading" style="font-family: 'Kanit', sans-serif;">Historia</header>
+              </li>
+              <!-- Imagen que abre el panel de comunicación -->
+              <li class="one_quarter first">
+                <a>
+                  <img id="miImagen" src="../images/demo/gallery/ELICE.jpg" alt="Elice"
+                    onclick="document.getElementById('aviso').setAttribute('data-on', 'on');">
+                </a>
+              </li>
+
+              <!-- Panel de comunicación -->
+              <div class="panel" id="aviso" data-on="off" onclick="this.setAttribute('data-on', 'off')">
+                <div>
+                  <img src="../images/demo/gallery/ELICE.jpg" alt="Icono" class="image-left">
+                  <p style="text-align: justify; color: rgba(255, 255, 255, 0.823);"><strong class="heading" style="font-family: 'Kanit', sans-serif;">Título de la Imagen</strong><br>
+                  Esta es una breve descripción que acompaña a la imagen, explicando su contenido o propósito.</p>
+                </div>
+              </div>
+
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
@@ -99,7 +107,10 @@
               <!-- Más imágenes aquí para página 1 -->
             </ul>
             <ul class="nospace clear page-2" style="display: none;"> <!-- Página 2 -->
-              <li><header class="heading" style="font-family: 'Kanit', sans-serif;">NON</header></li>
+              <li>
+                <header class="heading" style="font-family: 'Kanit', sans-serif;">Tipos de Osciloscopios y Generador de
+                  Funciones</header>
+              </li>
               <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
@@ -114,7 +125,9 @@
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
             </ul>
             <ul class="nospace clear page-3" style="display: none;"> <!-- Página 3 -->
-              <li><header class="heading" style="font-family: 'Kanit', sans-serif;" >D</header></li>
+              <li>
+                <header class="heading" style="font-family: 'Kanit', sans-serif;">Aplicaciones</header>
+              </li>
               <li class="one_quarter first"><a href="#"><img src="../images/demo/logo.png" alt=""></a></li>
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
@@ -127,8 +140,16 @@
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
               <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+              <!-- Script de animación -->
+              <script>
+                function openTab(tabId) {
+                  const tabs = document.querySelectorAll('.tab-content');
+                  tabs.forEach(tab => tab.style.display = 'none');
+                  document.getElementById(tabId).style.display = 'block';
+                }
+              </script>
             </ul>
-            <figcaption style="font-family: 'Kanit', sans-serif;" >Gallery Description Goes Here</figcaption>
+            <figcaption style="font-family: 'Kanit', sans-serif;">Gallery Description Goes Here</figcaption>
           </figure>
         </div>
 

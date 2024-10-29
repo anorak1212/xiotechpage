@@ -781,33 +781,43 @@ ul li {
 
 .panel div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    background: beige;
-    /* Bordes redondeados para mejor estética */
+    background: rgb(0, 7, 22);
     padding: 20px;
-    width: 80%;
-    max-width: 400px;
-    height: auto;
+    width: 1251px; /* Aumentar el ancho del panel */
+    max-width: 90%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra para resaltar el panel */
+    border-radius: 10px;
     z-index: 1000;
-    text-align: center;
-    /* Centra el texto dentro del panel */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos para la imagen */
+.panel div img {
+    width: 500px; /* Aumentar tamaño de la imagen */
+    height: auto;
 }
 
 /* Mostrar el panel */
 .panel[data-on='on'] {
     transform: scale(1);
     z-index: 1000;
-    /* Asegura que esté sobre otros elementos */
 }
 
 /* Ocultar el panel */
 .panel[data-on='off'] {
     transform: scale(0);
 }
+
+.titulo-equivalente {
+    font-size: 1.17em; /* Tamaño de fuente equivalente a h3 */
+    font-weight: bold; /* Negrita, opcional */
+    margin: 0; /* Elimina el margen por defecto */
+    line-height: 1.5; /* Espaciado entre líneas, opcional */
+}
+
+
 
 /* Galería */
 #gallery {
