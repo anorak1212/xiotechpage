@@ -785,7 +785,7 @@ ul li {
     align-items: center;
     background: rgb(0, 7, 22);
     padding: 20px;
-    width: 1251px; /* Aumentar el ancho del panel */
+    width: 1000px; /* Aumentar el ancho del panel */
     max-width: 90%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
