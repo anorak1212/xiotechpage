@@ -900,3 +900,103 @@ figcaption.center {
 .gallery-item:hover figcaption.center {
     opacity: 1;
 }
+
+/* Estilo de la paginación */
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-family: "Kanit", sans-serif; /* Agregar fuente Kanit */
+}
+
+.pagination a:hover {
+    background-color: #ff1100; /* Color de fondo al pasar el cursor */
+    color: #fff;
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+/* Estilo cuando el enlace es seleccionado o está activo */
+.pagination a:active,
+.pagination a:focus {
+    background-color: #b30000; /* Color de fondo al seleccionar */
+    color: #fff; /* Color del texto al seleccionar */
+}
+
+/* Estilo específico para el botón "Previous" y "Next" */
+.pagination .prev, .pagination .next {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Soporte para móviles */
+@media (max-width: 768px) {
+    html, body {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+    }
+
+    .btn.medium {
+        padding: 8px 12px;
+    }
+
+    .btn.small {
+        padding: 6px 10px;
+    }
+
+    .wrapper, #gallery {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .gallery-item iframe {
+        height: 250px;
+    }
+
+    .panel div {
+        flex-direction: column;
+        width: 90%;
+        padding: 15px;
+    }
+
+    .panel div img {
+        width: 100%;
+    }
+
+    .video-container {
+        padding: 5px;
+    }
+
+    /* Ajustes de la galería */
+    .gallery-item iframe {
+        height: 300px;
+    }
+
+    /* Ajuste de cuadrículas y tamaños de columna */
+    .one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter {
+        width: 100% !important;
+        margin: 0;
+        float: none;
+    }
+
+    /* Ajuste de tabla para ser responsive */
+    .scrollable {
+        overflow-x: auto;
+    }
+}
